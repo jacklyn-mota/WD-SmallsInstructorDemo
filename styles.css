@@ -157,16 +157,20 @@ p {
 
 /* MEDIA QUERIES START HERE */
 
-/* Mobile devices (up to 767px) */
+/* Mobile devices (up to 767px) 
+   Optimizes layout for smartphones and small screens */
 @media (max-width: 767px) {
+  /* Reduce main heading size for smaller screens */
   h1 {
     font-size: 48px;
   }
 
+  /* Decrease padding to maximize content space on mobile */
   .description {
     padding: 2rem 1rem;
   }
 
+  /* Scale down heading and paragraph text for readability */
   .description h3 {
     font-size: 1.75rem;
   }
@@ -175,46 +179,58 @@ p {
     font-size: 1rem;
   }
 
+  /* Stack columns vertically on mobile (single column layout) */
   .col {
     width: 100%;
     margin: 1% 0;
   }
 
+  /* Reduce gallery image height for mobile viewing */
   #gallery figure {
     height: 200px;
   }
 
+  /* Decrease hero image height to fit smaller screens */
   .hero-image {
     height: 50vh;
   }
 }
 
-/* Tablets (768px to 991px) */
+/* Tablets (768px to 991px) 
+   Optimizes layout for tablets and medium-sized screens */
 @media (min-width: 768px) and (max-width: 991px) {
+  /* Medium heading size for tablets */
   h1 {
     font-size: 70px;
   }
 
+  /* Moderate padding for tablet screens */
   .description {
     padding: 3rem 2rem;
   }
 
+  /* Adjust heading size for tablet readability */
   .description h3 {
     font-size: 2rem;
   }
 
+  /* Two-column layout for tablets (48% width allows 2 items per row) */
   .col {
     width: 48%;
     margin: 1%;
   }
 
+  /* Medium gallery image height for tablets */
   #gallery figure {
     height: 250px;
   }
 }
 
-/* Desktop and larger (992px and up) */
+/* Desktop and larger (992px and up) 
+   Default desktop styles are already defined above, 
+   this adds enhancements for larger screens */
 @media (min-width: 992px) {
+  /* Slightly larger base font for better readability on large screens */
   body {
     font-size: 18px;
   }
